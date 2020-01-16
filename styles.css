@@ -1,26 +1,52 @@
 body, html{
-  height: 100%;
-  width: 98%;
+  height: 98%;
+  width: 99%;
+  background-color: #DDDFDF;
   
 }
 
 .justify{
   display: flex;
   justify-content: center;
+  margin-top: -20px;
+  height: 250px;
+}
+
+#title{
+  background-color: #2377A4;
+  height: 8vh;
+  margin: 0;
+  padding: 40px 0px;
+  width: 100vw;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  text-align: center;
+  color: #F8F8F8;
+  box-shadow: 3px 3px 4px rgba(71, 71, 71, 0.76);
+  font-size: 3em;
+  
 }
 
 .cardArray{
-  width: 60%;
+  margin-top: 20vh;
+  width: 900px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+
   
 }
 
 .alignCenter{
   text-align: center;
+}
 
+a{
+  text-decoration: none;
+  
 }
 
 .center{
@@ -28,25 +54,54 @@ body, html{
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-top: -300px;
 }
 
 .cardStyle{
-  border: 2px solid rgba(136, 194, 136, 0.767);
+  border: 2px solid #C2C2C2;
   border-radius: 20px;
-  padding: 50px 60px;
-  background-color: rgba(9, 177, 59, 0.514);
+  padding: 50px 65px;
   box-shadow: 3px 3px 4px rgba(113, 134, 125, 0.76);
-  color: white;
-  width: 200px;  
-  font-size: 2em;
-
+  color: rgba(0, 0, 0, 0.521);
+  width: 300px; 
+  height: 120px;
+  font-size: 5em;
+  text-decoration: none;
 }
+
+#vaxes{
+  padding-left: 20px;
+  padding-right: 100px;
+  margin-bottom: 10px;
+  background-image: url('./images/vaxDog.jpg');
+  background-size: cover;
+}
+
+#album{
+  background-image: url('./images/photoAlbumDog.jpg');
+  background-size: cover;
+  
+}
+
+#dates{
+  background-image: url('./images/dogSnow.jpg');
+  background-size: cover;
+}
+
+#notes{
+  background-image: url('./images/smartDoggo.jpg');
+  background-size: cover;
+}
+
+/* .overlay{
+  background-color: rgba(66, 66, 66, 0.541);
+} */
 
 .cardStyle:hover{
   cursor: pointer;
 }
 
-@media only screen and (max-device-width: 786px) {
+@media only screen and (max-device-width: 768px) {
     
   [class*="cardArray"] {
     display: flex;
@@ -56,6 +111,8 @@ body, html{
     
 }
   [class*="cardStyle"] {
-    width: 75%;
+    width: 350px;
+    height: 150px;
+    color: rgba(0, 0, 0, 0.521);
   }
   }
