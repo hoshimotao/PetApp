@@ -1,4 +1,61 @@
+body, html{
+  height: 100%;
+  width: 98%;
+  
+}
+
 .justify{
   display: flex;
   justify-content: center;
 }
+
+.cardArray{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.alignCenter{
+  text-align: center;
+
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cardStyle{
+  border: 2px solid rgba(136, 194, 136, 0.767);
+  border-radius: 20px;
+  padding: 50px 60px;
+  background-color: rgba(9, 177, 59, 0.514);
+  box-shadow: 3px 3px 4px rgba(113, 134, 125, 0.76);
+  color: white;
+  width: 200px;  
+  font-size: 2em;
+
+}
+
+.cardStyle:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 786px) {
+    
+  [class*="cardArray"] {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2em;
+    
+}
+  [class*="cardStyle"] {
+    width: 75%;
+  }
+  }
