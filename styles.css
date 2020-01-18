@@ -70,9 +70,8 @@ a{
 }
 
 #vaxes{
-  padding-left: 25px;
-  padding-right: 105px;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
   background-image: url('./images/vaxDog.jpg');
   background-size: cover;
 }
@@ -93,10 +92,6 @@ a{
   background-size: cover;
 }
 
-/* .overlay{
-  background-color: rgba(66, 66, 66, 0.541);
-} */
-
 .cardStyle:hover{
   cursor: pointer;
 }
@@ -108,11 +103,28 @@ a{
     justify-content: center;
     flex-direction: column;
     font-size: 2em;
+    height: 60vh;
     
 }
   [class*="cardStyle"] {
-    width: 350px;
-    height: 150px;
-    color: rgba(0, 0, 0, 0.521);
+    width: 400px;
+    height: 150px;  
+    margin-bottom: 20px;  
+    /* color: rgba(0, 0, 0, 0.521); */
+    color: rgba(46, 45, 45, 0.753);
+    font-size: 1.4em;
+  }
+
+
+  [class*="justify"] {
+    margin-bottom: 40px;
+
+  }
+
+  [id*="vaxes"]{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    padding-right: 65px;
   }
   }
