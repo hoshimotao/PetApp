@@ -17,8 +17,10 @@ body, html{
   height: 8vh;
   margin: 0;
   padding: 40px 0px;
-  width: 100vw;
-  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   right: 0;
   top: 0;
@@ -69,6 +71,14 @@ a{
   text-decoration: none;
 }
 
+.bigFont{
+  font-size:48px;
+}
+
+.textFieldWidth{
+  width: 400px;
+}
+
 #vaxes{
   display: flex;
   justify-content: center;
@@ -116,15 +126,13 @@ a{
   }
 
 
-  [class*="justify"] {
-    margin-bottom: 40px;
 
-  }
 
   [id*="vaxes"]{
     justify-content: center;
     display:flex;
     align-items: center;
     padding-right: 65px;
+
   }
   }
